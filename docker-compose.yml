@@ -36,3 +36,13 @@ services:
         - ${RIDGEPOLE_CONFIG_PATH}:/ridgepole
       networks:
         - backend
+
+### ChromeDriver ################################################
+    chromedriver:
+      image: yukinying/chrome-headless-browser-selenium
+      networks:
+        - backend
+      cap_add:
+        - SYS_ADMIN
+      ports:
+        - ${SELENIUM_PORT}:4444
