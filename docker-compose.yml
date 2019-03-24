@@ -7,7 +7,7 @@ networks:
 services:
 
 ### Phoenix ###########################################
-    phoenix1.4:
+    app:
       build: ./phoenix1.4
       volumes:
         - ${APP_CODE_PATH_HOST}:/app
