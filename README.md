@@ -10,10 +10,10 @@ WEBPACK_DEVSERVER_PORT=
 
 ### プロジェクトの作成
 ```bash
-docker-compose run phoenix1.4 mix phx.new . --app hoge
+docker-compose run app mix phx.new . --app hoge
 ```
 
 ### サーバー起動
 ```bash
-docker-compose up -d phoenix1.4
+docker-compose up -d app
 ```
